@@ -1,0 +1,186 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    @include navbar-mixin-min-sm();
+    @include commonBtn-mixin-min-sm();
+    @include heroSection-mixin-min-sm();
+    @include aboutUs-mixin-min-sm();
+    @include pageHeading-mixin-min-sm();
+    @include clientTestimonals-mixin-min-sm();
+    @include howToPlay-mixin-min-sm();
+    @include downloadApp-mixin-min-sm();
+    @include faqSection-mixin-min-sm();
+    @include footer-mixin-min-sm();
+    @include termsCondition-mixin-min-sm();
+
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @include navbar-mixin-min-md();
+  @include commonBtn-mixin-min-md();
+  @include heroSection-mixin-min-md();
+  @include aboutUs-mixin-min-md();
+  @include pageHeading-mixin-min-md();
+  @include clientTestimonals-mixin-min-md();
+  @include howToPlay-mixin-min-md();
+  @include downloadApp-mixin-min-md();
+  @include faqSection-mixin-min-md();
+  @include footer-mixin-min-md();
+  @include termsCondition-mixin-min-md();
+
+
+
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @include navbar-mixin-min-lg();
+  @include commonBtn-mixin-min-lg();
+  @include heroSection-mixin-min-lg();
+  @include aboutUs-mixin-min-lg();
+  @include pageHeading-mixin-min-lg();
+  @include clientTestimonals-mixin-min-lg();
+  @include howToPlay-mixin-min-lg();
+  @include downloadApp-mixin-min-lg();
+  @include faqSection-mixin-min-lg();
+  @include footer-mixin-min-lg();
+  @include termsCondition-mixin-min-lg();
+
+
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include navbar-mixin-min-xl();
+  @include commonBtn-mixin-min-xl();  
+  @include heroSection-mixin-min-xl();  
+  @include aboutUs-mixin-min-xl();  
+  @include pageHeading-mixin-min-xl();  
+  @include clientTestimonals-mixin-min-xl();
+  @include howToPlay-mixin-min-xl();  
+  @include downloadApp-mixin-min-xl();  
+  @include faqSection-mixin-min-xl();  
+  @include footer-mixin-min-xl();  
+  @include termsCondition-mixin-min-xl();  
+
+  
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  @include navbar-mixin-min-xxl();
+  @include commonBtn-mixin-min-xxl();
+  @include heroSection-mixin-min-xxl();
+  @include aboutUs-mixin-min-xxl();
+  @include pageHeading-mixin-min-xxl();
+  @include clientTestimonals-mixin-min-xxl();
+  @include howToPlay-mixin-min-xxl();
+  @include downloadApp-mixin-min-xxl();
+  @include faqSection-mixin-min-xxl();
+  @include footer-mixin-min-xxl();
+  @include termsCondition-mixin-min-xxl();
+
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  @include navbar-mixin-max-xl();
+  @include commonBtn-mixin-max-xl();
+  @include heroSection-mixin-max-xl();
+  @include aboutUs-mixin-max-xl();
+  @include pageHeading-mixin-max-xl();
+  @include clientTestimonals-mixin-max-xl();
+  @include howToPlay-mixin-max-xl();
+  @include downloadApp-mixin-max-xl();
+  @include faqSection-mixin-max-xl();
+  @include footer-mixin-max-xl();
+  @include termsCondition-mixin-max-xl();
+
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  @include navbar-mixin-max-lg(); 
+  @include commonBtn-mixin-max-lg();
+  @include heroSection-mixin-max-lg(); 
+  @include aboutUs-mixin-max-lg(); 
+  @include pageHeading-mixin-max-lg(); 
+  @include clientTestimonals-mixin-max-lg(); 
+  @include howToPlay-mixin-max-lg(); 
+  @include downloadApp-mixin-max-lg(); 
+  @include faqSection-mixin-max-lg(); 
+  @include footer-mixin-max-lg(); 
+  @include termsCondition-mixin-max-lg(); 
+
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  @include navbar-mixin-max-md();
+  @include commonBtn-mixin-max-md();
+  @include heroSection-mixin-max-md();
+  @include aboutUs-mixin-max-md();
+  @include pageHeading-mixin-max-md();
+  @include clientTestimonals-mixin-max-md();
+  @include howToPlay-mixin-max-md();
+  @include downloadApp-mixin-max-md();
+  @include faqSection-mixin-max-md();
+  @include footer-mixin-max-md();
+  @include termsCondition-mixin-max-md();
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  @include navbar-mixin-max-sm();
+  @include commonBtn-mixin-max-sm();
+  @include heroSection-mixin-max-sm();
+  @include aboutUs-mixin-max-sm();
+  @include pageHeading-mixin-max-sm();
+  @include clientTestimonals-mixin-max-sm();
+  @include howToPlay-mixin-max-sm();
+  @include downloadApp-mixin-max-sm();
+  @include faqSection-mixin-max-sm();
+  @include footer-mixin-max-sm();
+  @include termsCondition-mixin-max-sm();
+
+
+
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  @include navbar-mixin-max-xs();
+  @include commonBtn-mixin-max-xs();
+  @include heroSection-mixin-max-xs();
+  @include aboutUs-mixin-max-xs();
+  @include pageHeading-mixin-max-xs();
+  @include clientTestimonals-mixin-max-xs();
+  @include howToPlay-mixin-max-xs();
+  @include downloadApp-mixin-max-xs();
+  @include faqSection-mixin-max-xs();
+  @include footer-mixin-max-xs();
+  @include termsCondition-mixin-max-xs();
+
+
+}
+
+@media (max-width: 400px) {
+
+  @include howToPlay-mixin-max-400px();
+}
+
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width

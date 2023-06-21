@@ -1,0 +1,115 @@
+.commonBtn{
+    padding: 12px 43px;
+    background-color:$theme3;
+    border: 1px solid $theme3;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    & .icon{
+       transition: all 0.3s ease-in-out;
+    }
+    &:hover{
+        border: 1px solid $theme3;
+        background-color: $white;
+        color: $black;
+        & .icon{
+            filter: invert(1);
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin commonBtn-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin commonBtn-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin commonBtn-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin commonBtn-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin commonBtn-mixin-min-xxl() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin commonBtn-mixin-max-xl() {
+    .commonBtn{
+
+        & .icon{
+        
+        }
+        &:hover{
+      
+            & .icon{
+               
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin commonBtn-mixin-max-lg() {
+    .commonBtn{
+
+        & .icon{
+        
+        }
+        &:hover{
+      
+            & .icon{
+               
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin commonBtn-mixin-max-md() {
+    .commonBtn{
+
+        & .icon{
+        
+        }
+        &:hover{
+      
+            & .icon{
+               
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin commonBtn-mixin-max-sm() {
+    .commonBtn{
+
+        & .icon{
+        
+        }
+        &:hover{
+      
+            & .icon{
+               
+            }
+        }
+    }
+    
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin commonBtn-mixin-max-xs() {
+    .commonBtn{
+        padding: 10px 28px;
+        font-size: 13px;
+        & .icon{
+        
+        }
+        &:hover{
+      
+            & .icon{
+               
+            }
+        }
+    }
+    
+}

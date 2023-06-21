@@ -1,0 +1,2218 @@
+// heroSection
+.heroSection{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/Main-page/4882066.jpg');
+//    background-image: url(../img/Main-page/4882066.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+   & .heading {
+    font-size: 18px;
+    line-height: 26px;
+}
+}
+// Small devices (landscape phones, 576px and up)
+@mixin heroSection-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin heroSection-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin heroSection-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin heroSection-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin heroSection-mixin-min-xxl() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin heroSection-mixin-max-xl() {
+    .heroSection{
+       
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin heroSection-mixin-max-lg() {
+    .heroSection{
+        & .head {
+            font-size: 50px;
+            line-height: 59px;
+        }
+        & .heading {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin heroSection-mixin-max-md() {
+    .heroSection{
+        & .head{
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin heroSection-mixin-max-sm() {
+    .heroSection{
+        & .head {
+            font-size: 35px;
+            line-height: 43px;
+        }
+        & .heading {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin heroSection-mixin-max-xs() {
+    .heroSection{
+        & .head {
+            font-size: 28px;
+            line-height: 32px;
+        }
+        & .heading {
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+    
+}
+
+// aboutUs
+.aboutUs{
+    & .card{
+        border: 1px solid #162044 ;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color:#081131 !important ;
+        }
+        & .card-body{
+            & .cardCircle{
+                width: 130px;
+                height: 130px;
+                border: 2px solid $blue;
+                border-radius: 50%;
+                position: relative;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    width: 110px;
+                    height: 110px;
+                    border: 3px dotted $blue;
+                    border-radius: 50%;
+                    animation: rotate 15s linear infinite;
+                    transition: 0.3s ease-in-out;
+                }
+                @keyframes rotate {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+        
+                    25% {
+                        transform: rotate(90deg);
+                    }
+        
+                    50% {
+                        transform: rotate(180deg);
+                    }
+        
+                    75% {
+                        transform: rotate(270deg);
+                    }
+        
+                    100% {
+                        transform: rotate(360deg);
+                    }
+        
+                }
+                & .dotCircle{
+                  
+                    & .icon{
+                        width: 300px;
+                        height: 30px;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: $theme1;
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                            z-index: -2;
+                        }
+                    }
+              
+                }
+            }  
+            & .heading {
+                font-size: 18px;
+                line-height: 26px;
+            }
+            & .text {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin aboutUs-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin aboutUs-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin aboutUs-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin aboutUs-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin aboutUs-mixin-min-xxl() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin aboutUs-mixin-max-xl() {
+    .aboutUs{
+        & .card{
+         
+            &:hover{
+              
+            }
+            & .card-body{
+                & .cardCircle{
+            
+                    &:after{
+             
+                    }
+                
+                    & .dotCircle{
+                      
+                        & .icon{
+                       
+                            &::after{
+                
+                            }
+                        }
+                  
+                    }
+                }  
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin aboutUs-mixin-max-lg() {
+    .aboutUs{
+        & .card{
+         
+            &:hover{
+              
+            }
+            & .card-body{
+                & .cardCircle{
+            
+                    &:after{
+             
+                    }
+                
+                    & .dotCircle{
+                      
+                        & .icon{
+                       
+                            &::after{
+                
+                            }
+                        }
+                  
+                    }
+                }  
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin aboutUs-mixin-max-md() {
+    .aboutUs{
+        & .card{
+         
+            &:hover{
+              
+            }
+            & .card-body{
+                & .cardCircle{
+            
+                    &:after{
+             
+                    }
+                
+                    & .dotCircle{
+                      
+                        & .icon{
+                       
+                            &::after{
+                
+                            }
+                        }
+                  
+                    }
+                }  
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin aboutUs-mixin-max-sm() {
+    .aboutUs{
+        & .card{
+         
+            &:hover{
+              
+            }
+            & .card-body{
+                & .cardCircle{
+            
+                    &:after{
+             
+                    }
+                
+                    & .dotCircle{
+                      
+                        & .icon{
+                       
+                            &::after{
+                
+                            }
+                        }
+                  
+                    }
+                }  
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin aboutUs-mixin-max-xs() {
+    .aboutUs{
+        & .card{
+         
+            &:hover{
+              
+            }
+            & .card-body{
+                & .cardCircle{
+            
+                    &:after{
+             
+                    }
+                
+                    & .dotCircle{
+                      
+                        & .icon{
+                       
+                            &::after{
+                
+                            }
+                        }
+                  
+                    }
+                }  
+                & .heading {
+                    font-size: 17px;
+                    line-height: 25px;
+                }
+                & .text {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+// howToPlay
+.howToPlay{
+    & .mainCard{
+        background-color: rgba(255,255,255,0.2);
+        backdrop-filter: blur(0px);
+        width: 350px;
+        height: 250px;
+        & .cardSection1{
+            width: 300px;
+            height: 68px;
+            position: absolute;
+            top: -30px;
+            left: -67px;
+            background-color: rgba(255,255,255,0.2);
+            backdrop-filter: blur(0px);
+            line-height: normal;
+        }
+        & .cardSection2{
+            width: 258px;
+            height: 52px;
+            position: absolute;
+            top: 26%;
+            right: -100px;
+            background-color: rgba(255,255,255,0.2);
+            backdrop-filter: blur(0px);
+            line-height: normal;
+
+            & .icon{
+                height: 35px;
+                width: 35px;
+            }
+        }
+        & .cardSection3{
+            width: 258px;
+            height: 52px;
+            position: absolute;
+            top: 52%;
+            right: -100px;
+            background-color: rgba(255,255,255,0.2);
+            backdrop-filter: blur(0px);
+            line-height: normal;
+
+            & .icon{
+                height: 35px;
+                width: 35px;
+            }
+        }
+        & .cardSection4{
+            width: 300px;
+            height: 83px;
+            position: absolute;
+            bottom:-43px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255,255,255,0.2);
+            backdrop-filter: blur(0px);
+            line-height: normal;
+
+            & .icon{
+                height: 10px;
+                width: 10px;
+            }
+            & .text{
+                font-size: 11px;
+            }
+            & .spanColan{
+                & .columnSpan{
+                    height: 20px;
+                }
+                & .columnSpan2{
+                    top: 4px;
+                    left: 35px;
+                    height: 0px !important;
+
+                }
+            }
+            & .sport{
+                width: 15px;
+                height: 15px;
+                left:7px;
+            }
+        }
+        & .cardSection5{
+            position: absolute;
+            top: 48px;
+            left: 0;
+           & .block {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+            }
+            
+          & .box {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: calc(100% - 50px);
+                height: calc(100% - 50px);
+                border-radius: 50%;
+                background-color: #292929;
+                box-shadow: 0 0 5px 3px #222121;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: calc(100% + 28px);
+                    height: calc(100% + 28px);
+                    border-radius: 50%;
+                    border: 1px solid #353535;
+                }
+                & .number{
+                    & span{
+                        color: $theme1;
+                        &.num{
+                            font-size: 35px;
+                            font-weight: bold;
+                        }
+                        &.sub{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                & .title{
+                    font-size: 15px;
+                    color:$theme1;
+                }
+            }
+            
+           & .dots {
+                display: block;
+                position: absolute;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                transition: 2s transform, 2s opacity ease;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    top: 5px;
+                    left: 50%;
+                    border-radius: 50%;
+                    background-color: $theme3;
+                    box-shadow: 0 0 5px 2px #585858;
+                    transform: translateX(-50%);
+                }
+            }
+            
+           & .svg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                fill: none;
+                transform: rotate(-90deg);
+            }
+            
+           & .circle {
+                stroke: url(#gradientStyle);
+                stroke-width: 4px;
+                stroke-dasharray: 503;
+                stroke-dashoffset: 503;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                transition: 2s stroke-dashoffset;
+            }
+        }
+    }
+    & .howToPlayContent{
+        & .circleBox{
+                width: 50px;
+                height: 50px;
+                background-color:#081131 !important ;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 85px;
+                    height: 85px;
+                    background-image: url(../img/Main-page/Group.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    z-index: 3;
+                    animation: rotate 15s linear infinite;
+                }
+                @keyframes rotate {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+        
+                    25% {
+                        transform: rotate(90deg);
+                    }
+        
+                    50% {
+                        transform: rotate(180deg);
+                    }
+        
+                    75% {
+                        transform: rotate(270deg);
+                    }
+        
+                    100% {
+                        transform: rotate(360deg);
+                    }
+        
+                }
+            }
+        & .heading{
+            font-size: 18px;
+            line-height: 26px;
+        }
+        & .text{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        & .box-2{
+            position: relative;
+            color: $blue;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 85px;
+                height: 85px;
+                background-image: url(../img/Main-page/Group1.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 3;
+            }
+        }
+        & .box-3{
+            position: relative;
+            color: $blue;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 85px;
+                height: 85px;
+                background-image: url(../img/Main-page/Group2.svg   );
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 3;
+            }
+        }
+}
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin howToPlay-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin howToPlay-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin howToPlay-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin howToPlay-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin howToPlay-mixin-min-xxl() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin howToPlay-mixin-max-xl() {
+    .howToPlay{
+        & .mainCard{
+       
+            & .cardSection1{
+          
+            }
+            & .cardSection2{
+        
+    
+                & .icon{
+                
+                }
+            }
+            & .cardSection3{
+   
+    
+                & .icon{
+                   
+                }
+            }
+            & .cardSection4{
+        
+    
+                & .icon{
+                   
+                }
+                & .text{
+                  
+                }
+                & .spanColan{
+                    & .columnSpan{
+                     
+                    }
+                    & .columnSpan2{
+                   
+                    }
+                }
+                & .sport{
+                 
+                }
+            }
+            & .cardSection5{
+             
+               & .block {
+              
+                }
+                
+              & .box {
+           
+    
+                    &::before{
+                
+                    }
+                    & .number{
+                        & span{
+                       
+                            &.num{
+                        
+                            }
+                            &.sub{
+                              
+                            }
+                        }
+                    }
+                    & .title{
+                       
+                    }
+                }
+                
+               & .dots {
+                
+                    &::after{
+                 
+                    }
+                }
+                
+               & .svg {
+            
+                }
+                
+               & .circle {
+              
+                }
+            }
+        }
+        & .howToPlayContent{
+            & .circleBox{
+       
+                &::before{
+             
+                }
+            }
+            & .heading{
+                
+            }
+            & .text{
+              
+            }
+            & .box-2{
+            
+                &::before{
+              
+                }
+            }
+            & .box-3{
+             
+                &::before{
+             
+                }
+            }
+    }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin howToPlay-mixin-max-lg() {
+    .howToPlay{
+        & .mainCard{
+       
+            & .cardSection1{
+          
+            }
+            & .cardSection2{
+                right: -78px;
+    
+                & .icon{
+                
+                }
+            }
+            & .cardSection3{
+                right: -78px;
+    
+                & .icon{
+                   
+                }
+            }
+            & .cardSection4{
+        
+    
+                & .icon{
+                   
+                }
+                & .text{
+                  
+                }
+                & .spanColan{
+                    & .columnSpan{
+                     
+                    }
+                    & .columnSpan2{
+                   
+                    }
+                }
+                & .sport{
+                 
+                }
+            }
+            & .cardSection5{
+             
+               & .block {
+              
+                }
+                
+              & .box {
+           
+    
+                    &::before{
+                
+                    }
+                    & .number{
+                        & span{
+                       
+                            &.num{
+                        
+                            }
+                            &.sub{
+                              
+                            }
+                        }
+                    }
+                    & .title{
+                       
+                    }
+                }
+                
+               & .dots {
+                
+                    &::after{
+                 
+                    }
+                }
+                
+               & .svg {
+            
+                }
+                
+               & .circle {
+              
+                }
+            }
+        }
+        & .howToPlayContent{
+            & .circleBox{
+       
+                &::before{
+             
+                }
+            }
+            & .heading{
+                
+            }
+            & .text{
+              
+            }
+            & .box-2{
+            
+                &::before{
+              
+                }
+            }
+            & .box-3{
+             
+                &::before{
+             
+                }
+            }
+    }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin howToPlay-mixin-max-md() {
+    .howToPlay{
+        & .mainCard{
+       
+            & .cardSection1{
+          
+            }
+            & .cardSection2{
+        
+    
+                & .icon{
+                
+                }
+            }
+            & .cardSection3{
+   
+    
+                & .icon{
+                   
+                }
+            }
+            & .cardSection4{
+        
+    
+                & .icon{
+                   
+                }
+                & .text{
+                  
+                }
+                & .spanColan{
+                    & .columnSpan{
+                     
+                    }
+                    & .columnSpan2{
+                   
+                    }
+                }
+                & .sport{
+                 
+                }
+            }
+            & .cardSection5{
+             
+               & .block {
+              
+                }
+                
+              & .box {
+           
+    
+                    &::before{
+                
+                    }
+                    & .number{
+                        & span{
+                       
+                            &.num{
+                        
+                            }
+                            &.sub{
+                              
+                            }
+                        }
+                    }
+                    & .title{
+                       
+                    }
+                }
+                
+               & .dots {
+                
+                    &::after{
+                 
+                    }
+                }
+                
+               & .svg {
+            
+                }
+                
+               & .circle {
+              
+                }
+            }
+        }
+        & .howToPlayContent{
+            & .circleBox{
+       
+                &::before{
+             
+                }
+            }
+            & .heading{
+                
+            }
+            & .text{
+              
+            }
+            & .box-2{
+            
+                &::before{
+              
+                }
+            }
+            & .box-3{
+             
+                &::before{
+             
+                }
+            }
+    }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin howToPlay-mixin-max-sm() {
+    .howToPlay{
+        & .mainCard{
+       
+            & .cardSection1{
+          
+            }
+            & .cardSection2{
+        
+    
+                & .icon{
+                
+                }
+            }
+            & .cardSection3{
+   
+    
+                & .icon{
+                   
+                }
+            }
+            & .cardSection4{
+        
+    
+                & .icon{
+                   
+                }
+                & .text{
+                  
+                }
+                & .spanColan{
+                    & .columnSpan{
+                     
+                    }
+                    & .columnSpan2{
+                   
+                    }
+                }
+                & .sport{
+                 
+                }
+            }
+            & .cardSection5{
+             
+               & .block {
+              
+                }
+                
+              & .box {
+           
+    
+                    &::before{
+                
+                    }
+                    & .number{
+                        & span{
+                       
+                            &.num{
+                        
+                            }
+                            &.sub{
+                              
+                            }
+                        }
+                    }
+                    & .title{
+                       
+                    }
+                }
+                
+               & .dots {
+                
+                    &::after{
+                 
+                    }
+                }
+                
+               & .svg {
+            
+                }
+                
+               & .circle {
+              
+                }
+            }
+        }
+        & .howToPlayContent{
+            & .circleBox{
+       
+                &::before{
+             
+                }
+            }
+            & .heading{
+                
+            }
+            & .text{
+              
+            }
+            & .box-2{
+            
+                &::before{
+              
+                }
+            }
+            & .box-3{
+             
+                &::before{
+             
+                }
+            }
+    }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin howToPlay-mixin-max-xs() {
+    .howToPlay{
+        & .mainCard{
+         height: 380px;
+            & .cardSection1{
+                left: -14px;
+            }
+            & .cardSection2{
+             top: 57%;
+             left: 8px;
+                & .icon{
+                
+                }
+            }
+            & .cardSection3{
+                top: 72%;
+                right: 18px;
+    
+                & .icon{
+                   
+                }
+            }
+            & .cardSection4{
+        
+    
+                & .icon{
+                   
+                }
+                & .text{
+                  
+                }
+                & .spanColan{
+                    & .columnSpan{
+                     
+                    }
+                    & .columnSpan2{
+                   
+                    }
+                }
+                & .sport{
+                 
+                }
+            }
+            & .cardSection5{
+             left: 23%;
+               & .block {
+              
+                }
+                
+              & .box {
+           
+    
+                    &::before{
+                
+                    }
+                    & .number{
+                        & span{
+                       
+                            &.num{
+                        
+                            }
+                            &.sub{
+                              
+                            }
+                        }
+                    }
+                    & .title{
+                       
+                    }
+                }
+                
+               & .dots {
+                
+                    &::after{
+                 
+                    }
+                }
+                
+               & .svg {
+            
+                }
+                
+               & .circle {
+              
+                }
+            }
+        }
+        & .howToPlayContent{
+            & .circleBox{
+       
+                &::before{
+             
+                }
+            }
+            & .heading{
+                font-size: 16px;
+            }
+            & .text{
+                font-size: 13px;
+               
+            }
+            & .box-2{
+            
+                &::before{
+              
+                }
+            }
+            & .box-3{
+             
+                &::before{
+             
+                }
+            }
+    }
+    }
+    
+}
+@mixin howToPlay-mixin-max-400px(){
+    .howToPlay{
+       
+        & .mainCard{
+         height: 380px !important;
+            & .cardSection1{
+                left: -14px !important;
+            }
+            & .cardSection2{
+             top: 57% !important;
+             left: 8px !important;
+                & .icon{
+                
+                }
+            }
+            & .cardSection3{
+                top: 72% !important;
+                left: 8px !important;
+    
+                & .icon{
+                   
+                }
+            }
+            & .cardSection4{
+                bottom: -35px !important;
+                 left: 50% !important;
+                 width: 279px !important;
+    
+                & .icon{
+                   
+                }
+                & .text{
+                  
+                }
+                & .spanColan{
+                    & .columnSpan{
+                     
+                    }
+                    & .columnSpan2{
+                   
+                    }
+                }
+                & .sport{
+                 
+                }
+            }
+            & .cardSection5{
+             left: 23% !important;
+               & .block {
+              
+                }
+                
+              & .box {
+           
+    
+                    &::before{
+                
+                    }
+                    & .number{
+                        & span{
+                       
+                            &.num{
+                        
+                            }
+                            &.sub{
+                              
+                            }
+                        }
+                    }
+                    & .title{
+                       
+                    }
+                }
+                
+               & .dots {
+                
+                    &::after{
+                 
+                    }
+                }
+                
+               & .svg {
+            
+                }
+                
+               & .circle {
+              
+                }
+            }
+        }
+        & .howToPlayContent{
+            & .circleBox{
+       
+                &::before{
+             
+                }
+            }
+            & .heading{
+                
+            }
+            & .text{
+              
+               
+            }
+            & .box-2{
+            
+                &::before{
+              
+                }
+            }
+            & .box-3{
+             
+                &::before{
+             
+                }
+            }
+    }
+    }
+}
+
+// clientTestimonals
+.clientTestimonals{
+
+    & .text{
+
+    }
+    & .head{
+        font-size: 40px;
+        line-height: 50px;
+        position: relative;
+        &.hrLIne{
+            &::after{
+                position: absolute;
+                content: '';
+                width: 80px;
+                height: 3px;
+                background-color: $theme3;
+                left: 17px;
+                bottom: -12px;
+            }
+        }
+    }
+    & .clientOwl{
+        & .owl-stage-outer{
+            padding: 0;
+        }
+        & .item{
+            & .testimonialContent{
+                background-color: rgba(255,255,255,.2);
+                -webkit-backdrop-filter: blur(0px);
+                backdrop-filter: blur(0px);
+                position: relative;
+                z-index: 22;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    background-image: url(../img/Main-page/business-woman-2697954_960_720.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    top: -71px;
+                    left: -105px;
+                    border: 3px solid $theme1;
+                    height: 194px;
+                    width: 194px;
+                    z-index: -1;
+
+                }
+                & .hrLine{
+
+                        position: relative;
+                        &:after{
+                            position: absolute;
+                            content: '';
+                            width: 80px;
+                            height: 3px;
+                            background-color: $theme3;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -12px;
+                        }
+
+                }
+            }
+
+        }
+        
+        & .owl-nav{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            position: absolute;
+            width: auto !important;
+            top: 11px;
+            right:0;
+            gap: 10px;
+            & button{
+                background-color: $theme2;
+                height: 35px;
+                width: 35px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                gap: 3;
+                transition: all 0.3s ease-in-out;
+                & span{
+                    filter: invert(1);
+                 }
+                &:hover{
+                    background-color: $theme1 !important;
+                    & span{
+                       filter: invert(0);
+                    }
+                }
+                & span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin clientTestimonals-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin clientTestimonals-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin clientTestimonals-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin clientTestimonals-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin clientTestimonals-mixin-min-xxl() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin clientTestimonals-mixin-max-xl() {
+    .clientTestimonals{
+
+        & .text{
+    
+        }
+        & .head{
+            &.hrLIne{
+                &::after{
+                }
+            }
+        }
+        & .clientOwl{
+            & .owl-stage-outer{
+                
+            }
+            & .item{
+                & .testimonialContent{
+              
+                    &::before{
+        
+    
+                    }
+                    & .hrLine{
+                            &:after{
+                            }
+    
+                    }
+                }
+    
+            }
+            
+            & .owl-nav{
+                & button{
+                    &:hover{
+                        & span{
+                       
+                        }
+                    }
+                    & span{
+              
+                    }
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin clientTestimonals-mixin-max-lg() {
+    .clientTestimonals{
+
+        & .text{
+            font-size: 15px;
+        }
+        & .head{
+            font-size: 33px;
+            line-height: 42px;
+            &.hrLIne{
+                &::after{
+                }
+            }
+        }
+        & .clientOwl{
+            & .owl-stage-outer{
+                
+            }
+            & .item{
+                & .testimonialContent{
+              
+                    &::before{
+                        height: 170px;
+                         width: 174px;
+    
+                    }
+                    & .heading {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                    & .text {
+                        font-size: 15px;
+                    }
+                    & .hrLine{
+                            &:after{
+                            }
+    
+                    }
+                }
+    
+            }
+            
+            & .owl-nav{
+                & button{
+                    &:hover{
+                        & span{
+                       
+                        }
+                    }
+                    & span{
+              
+                    }
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin clientTestimonals-mixin-max-md() {
+    .clientTestimonals{
+
+        & .text{
+    
+        }
+        & .head{
+            &.hrLIne{
+                &::after{
+                }
+            }
+        }
+        & .clientOwl{
+            & .owl-stage-outer{
+                
+            }
+            & .item{
+                & .testimonialContent{
+              
+                    &::before{
+        
+    
+                    }
+                    & .hrLine{
+                            &:after{
+                            }
+    
+                    }
+                }
+    
+            }
+            
+            & .owl-nav{
+                & button{
+                    &:hover{
+                        & span{
+                       
+                        }
+                    }
+                    & span{
+              
+                    }
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin clientTestimonals-mixin-max-sm() {
+    .clientTestimonals{
+
+        & .text{
+    
+        }
+        & .head{
+            font-size: 29px;
+            line-height: 39px;
+            &.hrLIne{
+                &::after{
+                }
+            }
+        }
+        & .clientOwl{
+            & .owl-stage-outer{
+                
+            }
+            & .item{
+                & .testimonialContent{
+              
+                    &::before{
+                        height: 110px;
+                        width: 100px;
+                        border-radius: 50%;
+                        top: -62px;
+                        left: 50%;
+                        transform: translateX(-50%);
+    
+                    }
+                    & .hrLine{
+                            &:after{
+                            }
+    
+                    }
+                }
+    
+            }
+            
+            & .owl-nav{
+                & button{
+                    &:hover{
+                        & span{
+                       
+                        }
+                    }
+                    & span{
+              
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin clientTestimonals-mixin-max-xs() {
+    .clientTestimonals{
+
+        & .text{
+            font-size: 14px;
+        }
+        & .head{
+            font-size: 22px;
+            line-height: 30px;
+            &.hrLIne{
+                &::after{
+                }
+            }
+        }
+        & .clientOwl{
+            & .owl-stage-outer{
+                
+            }
+            & .item{
+                & .testimonialContent{
+              
+                    &::before{
+        
+    
+                    }
+                    & .hrLine{
+                            &:after{
+                            }
+    
+                    }
+                }
+    
+            }
+            
+            & .owl-nav{
+                & button{
+                    &:hover{
+                        & span{
+                       
+                        }
+                    }
+                    & span{
+              
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+// downloadApp
+.downloadApp{
+    & .head{
+        font-size: 48px;
+        line-height: 57px;
+    }
+    & .text{
+        font-size: 18px;
+    }
+    & .downloadBtn{
+        border: 1px solid $white;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: $theme2;
+        }
+        & .icon{
+            width: 35px;
+            height: 35px;
+        }
+        & .downloadSubheading{
+            font-size: 13px;
+            line-height: 16px;
+        }
+        & .downloadHeading{
+            font-size: 22px;
+            line-height: 27px;
+        }
+    }
+    & .playStore{
+        & .icon{
+            width: 90px;
+            height: 90px;
+        }
+        & .head{
+            font-size: 48px;
+        }
+        & .ratingIcon{
+            width: 150px;
+            height: 40px;
+        }
+        & .text{
+            font-size: 20px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin downloadApp-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin downloadApp-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin downloadApp-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin downloadApp-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin downloadApp-mixin-min-xxl() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin downloadApp-mixin-max-xl() {
+    .downloadApp{
+        & .head{
+          
+        }
+        & .text{
+         
+        }
+        & .downloadBtn{
+          
+            & .icon{
+           
+            }
+            & .downloadSubheading{
+             
+            }
+            & .downloadHeading{
+             
+            }
+        }
+        & .download-img{
+            width: 100%;
+            height: 400px;
+        }
+        & .playStore{
+            & .icon{
+           
+            }
+            & .head{
+               
+            }
+            & .ratingIcon{
+              
+            }
+            & .text{
+            
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin downloadApp-mixin-max-lg() {
+    .downloadApp{
+        & .head{
+            font-size: 42px;
+            line-height: 51px;
+        }
+        & .text{
+            font-size:16px;
+        }
+        & .downloadBtn{
+          
+            & .icon{
+           
+            }
+            & .downloadSubheading{
+             
+            }
+            & .downloadHeading{
+             
+            }
+        }
+        & .playStore{
+            & .icon{
+           
+            }
+            & .head{
+               
+            }
+            & .ratingIcon{
+              
+            }
+            & .text{
+            
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin downloadApp-mixin-max-md() {
+    .downloadApp{
+        & .head{
+          
+        }
+        & .text{
+         
+        }
+        & .downloadBtn{
+          
+            & .icon{
+           
+            }
+            & .downloadSubheading{
+             
+            }
+            & .downloadHeading{
+             
+            }
+        }
+        & .playStore{
+            & .icon{
+           
+            }
+            & .head{
+               
+            }
+            & .ratingIcon{
+              
+            }
+            & .text{
+            
+            }
+        }
+        & .download-img{
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin downloadApp-mixin-max-sm() {
+    .downloadApp{
+        & .head{
+            font-size: 34px;
+            line-height: 42px;
+        }
+        & .text{
+         
+        }
+        & .downloadBtn{
+            & .icon{
+                width: 30px;
+                height: 30px;
+           
+            }
+            & .downloadSubheading{
+             
+            }
+            & .downloadHeading{
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+        & .playStore{
+            & .icon{
+                width: 70px;
+                height: 70px;
+            }
+            & .head{
+                font-size: 30px;
+            }
+            & .ratingIcon{
+              
+            }
+            & .text{
+            
+            }
+        }
+    }
+    
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin downloadApp-mixin-max-xs() {
+    .downloadApp{
+        & .head{
+            font-size: 21px;
+            line-height: 28px;
+        }
+        & .text{
+         font-size: 14px;
+        }
+        & .downloadBtn{
+          
+            & .icon{
+                width: 25px;
+                height: 25px;
+            }
+            & .downloadSubheading{
+             
+            }
+            & .downloadHeading{
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+        & .playStore{
+            & .icon{
+                width: 40px;
+                height: 40px;
+            }
+            & .head{
+                font-size: 18px;
+            }
+            & .ratingIcon{
+            width: 99px;
+            height: 28px;
+            }
+            & .text{
+                font-size: 14px;
+            }
+        }
+        & .download-img{
+            width: 100%;
+            height: 250px;
+        }
+    }
+    
+}
+
+
+
+// faqSection 
+.faqSection{
+    & .accordion{
+        & .accordion-item{
+            & .accordion-header{
+                & .accordion-button{
+                    background-color: #112240;
+                    border: 1px solid hsla(0,0%,51.4%,.16);
+                    color: $theme1;
+                    font-size: 16px;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    &::after{
+                        background-image: url(../img/Main-page/plus.svg);
+                        width: 13px;
+                        height: 13px;
+                        background-position: center;
+                    }
+                    &:not(.collapsed)::after{
+                        background-image: url(../img/Main-page/minus.svg);
+                        width: 13px;
+                        height: 2px;
+                        background-position: center;
+                        transform: rotate(0);
+                    }
+                
+                }
+            }
+            & .accordion-collapse{
+                & .text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin faqSection-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin faqSection-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin faqSection-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin faqSection-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin faqSection-mixin-min-xxl() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin faqSection-mixin-max-xl() {
+    .faqSection{
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                       
+                        &:focus{
+                          
+                        }
+                        &::after{
+                        
+                        }
+                        &:not(.collapsed)::after{
+                         
+                        }
+                    
+                    }
+                }
+                & .accordion-collapse{
+                
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin faqSection-mixin-max-lg() {
+    .faqSection{
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                       
+                        &:focus{
+                          
+                        }
+                        &::after{
+                        
+                        }
+                        &:not(.collapsed)::after{
+                         
+                        }
+                    
+                    }
+                }
+                & .accordion-collapse{
+                
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin faqSection-mixin-max-md() {
+    .faqSection{
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                       
+                        &:focus{
+                          
+                        }
+                        &::after{
+                        
+                        }
+                        &:not(.collapsed)::after{
+                         
+                        }
+                    
+                    }
+                }
+                & .accordion-collapse{
+                
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin faqSection-mixin-max-sm() {
+    .faqSection{
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                       
+                        &:focus{
+                          
+                        }
+                        &::after{
+                        
+                        }
+                        &:not(.collapsed)::after{
+                         
+                        }
+                    
+                    }
+                }
+                & .accordion-collapse{
+                
+                }
+            }
+        }
+    }
+    
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin faqSection-mixin-max-xs() {
+    .faqSection{
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                        font-size: 14px;
+                        &:focus{
+                          
+                        }
+                        &::after{
+                        
+                        }
+                        &:not(.collapsed)::after{
+                         
+                        }
+                    
+                    }
+                }
+                & .accordion-collapse{
+                    & .text{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// terms and condition
+.termsCondition{
+    & .text{
+        font-size: 13px;
+    }
+    & .heading{
+
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin termsCondition-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin termsCondition-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin termsCondition-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin termsCondition-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin termsCondition-mixin-min-xxl() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin termsCondition-mixin-max-xl() {
+  .termsCondition{
+    & .text{
+    
+    }
+    & .heading{
+        
+    }
+}
+}
+// Large devices (desktops, less than 1200px)
+@mixin termsCondition-mixin-max-lg() {
+    .termsCondition{
+        & .text{
+        
+        }
+        & .heading{
+            
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin termsCondition-mixin-max-md() {
+    .termsCondition{
+        & .text{
+        
+        }
+        & .heading{
+            font-size: 18px;
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin termsCondition-mixin-max-sm() {
+    .termsCondition{
+        & .text{
+        
+        }
+        & .heading{
+            font-size: 16px;
+        }
+    }
+    
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin termsCondition-mixin-max-xs() {
+    .termsCondition{
+        & .text{
+            font-size: 12px;
+        }
+        & .heading{
+            font-size: 14px;
+        }
+    }
+}
